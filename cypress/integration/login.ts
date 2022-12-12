@@ -25,6 +25,7 @@ it.only('pomtest', function () {
     cy.get('h2')
     //cy.contains('here').click()
     cy.clickLink('here')
+    //Testing Git integration from Cypress
 
 })
 
