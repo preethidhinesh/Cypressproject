@@ -1,0 +1,87 @@
+{
+  "stats": {
+    "suites": 0,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-11-29T22:52:18.971Z",
+    "end": "2022-11-29T22:52:34.069Z",
+    "duration": 15098,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "139a546a-ca00-4d95-a596-370aa912cd66",
+      "title": "",
+      "fullFile": "cypress/integration/firstest.ts",
+      "file": "cypress/integration/firstest.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [
+        {
+          "title": "first typetest",
+          "fullTitle": "first typetest",
+          "timedOut": null,
+          "duration": 13769,
+          "state": "passed",
+          "speed": "slow",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "cy.visit('https://google.com'),\n    cy.get('[name =\"q\"]')\n        .type('Automation Step by step')\n        .type('{enter}');",
+          "err": {},
+          "uuid": "591d884d-e433-4cb1-8948-1fdb5c1bc917",
+          "parentUUID": "139a546a-ca00-4d95-a596-370aa912cd66",
+          "isHook": false,
+          "skipped": false
+        }
+      ],
+      "suites": [],
+      "passes": [
+        "591d884d-e433-4cb1-8948-1fdb5c1bc917"
+      ],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 13769,
+      "root": true,
+      "rootEmpty": false,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/reports"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

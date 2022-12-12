@@ -1,0 +1,91 @@
+{
+  "stats": {
+    "suites": 0,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2022-11-29T22:51:46.856Z",
+    "end": "2022-11-29T22:51:59.547Z",
+    "duration": 12691,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "f550be17-e66a-4658-8ab0-e073705d8ef8",
+      "title": "",
+      "fullFile": "cypress/integration/bflylogin.ts",
+      "file": "cypress/integration/bflylogin.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [
+        {
+          "title": "bflylogintest",
+          "fullTitle": "bflylogintest",
+          "timedOut": null,
+          "duration": 10415,
+          "state": "failed",
+          "speed": null,
+          "pass": false,
+          "fail": true,
+          "pending": false,
+          "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      {\n        \"title\": \"Failed screenshot\",\n        \"value\": \"/bflylogin.ts/bflylogintest (failed).png\"\n      }\n    ]\n  ]\n}",
+          "code": "cy.visit('https://cloud.staging.bfly.io/');\ncy.get('[data-bni-id=\"emailField\"]')\n    .type('pdhinesh@butterflynetinc.com');\n//cy.get('data-bni-id=\"emailField\"').type('pdhinesh@butterflynetinc.com{enter}')\ncy.get('[data-bni-id=\"passwordField\"]').type('Reset123{enter}');\ncy.get('[data-bni-id=\"loginButton\"]').click();",
+          "err": {
+            "message": "CypressError: Timed out retrying after 4050ms: `cy.click()` failed because this element is detached from the DOM.\n\n`<button data-bni-id=\"loginButton\" type=\"submit\" class=\"mt-4 w-full btn btn-solid btn-primary btn--lg\">...</button>`\n\nCypress requires elements be attached in the DOM to interact with them.\n\nThe previous command that ran was:\n\n  > `cy.get()`\n\nThis DOM element likely became detached somewhere between the previous and current command.\n\nCommon situations why this happens:\n  - Your JS framework re-rendered asynchronously\n  - Your app code reacted to an event firing and removed the element\n\nYou typically need to re-query for the element or add 'guards' which delay Cypress from running new commands.\n\nhttps://on.cypress.io/element-has-detached-from-dom",
+            "estack": "CypressError: Timed out retrying after 4050ms: `cy.click()` failed because this element is detached from the DOM.\n\n`<button data-bni-id=\"loginButton\" type=\"submit\" class=\"mt-4 w-full btn btn-solid btn-primary btn--lg\">...</button>`\n\nCypress requires elements be attached in the DOM to interact with them.\n\nThe previous command that ran was:\n\n  > `cy.get()`\n\nThis DOM element likely became detached somewhere between the previous and current command.\n\nCommon situations why this happens:\n  - Your JS framework re-rendered asynchronously\n  - Your app code reacted to an event firing and removed the element\n\nYou typically need to re-query for the element or add 'guards' which delay Cypress from running new commands.\n\nhttps://on.cypress.io/element-has-detached-from-dom\n    at $Cy.ensureAttached (https://cloud.staging.bfly.io/__cypress/runner/cypress_runner.js:163921:76)\n    at runAllChecks (https://cloud.staging.bfly.io/__cypress/runner/cypress_runner.js:150541:12)\n    at retryActionability (https://cloud.staging.bfly.io/__cypress/runner/cypress_runner.js:150621:16)\n    at tryCatcher (https://cloud.staging.bfly.io/__cypress/runner/cypress_runner.js:13022:23)\n    at Function.Promise.attempt.Promise.try (https://cloud.staging.bfly.io/__cypress/runner/cypress_runner.js:10296:29)\n    at whenStable (https://cloud.staging.bfly.io/__cypress/runner/cypress_runner.js:168785:63)\n    at https://cloud.staging.bfly.io/__cypress/runner/cypress_runner.js:168282:14\n    at tryCatcher (https://cloud.staging.bfly.io/__cypress/runner/cypress_runner.js:13022:23)\n    at Promise._settlePromiseFromHandler (https://cloud.staging.bfly.io/__cypress/runner/cypress_runner.js:10957:31)\n    at Promise._settlePromise (https://cloud.staging.bfly.io/__cypress/runner/cypress_runner.js:11014:18)\n    at Promise._settlePromise0 (https://cloud.staging.bfly.io/__cypress/runner/cypress_runner.js:11059:10)\n    at Promise._settlePromises (https://cloud.staging.bfly.io/__cypress/runner/cypress_runner.js:11139:18)\n    at Promise._fulfill (https://cloud.staging.bfly.io/__cypress/runner/cypress_runner.js:11083:18)\n    at https://cloud.staging.bfly.io/__cypress/runner/cypress_runner.js:12697:46\nFrom Your Spec Code:\n    at Context.eval (https://cloud.staging.bfly.io/__cypress/tests?p=cypress/integration/bflylogin.ts:113:43)",
+            "diff": null
+          },
+          "uuid": "acfede5c-1d45-4697-85f0-f931201fa7b4",
+          "parentUUID": "f550be17-e66a-4658-8ab0-e073705d8ef8",
+          "isHook": false,
+          "skipped": false
+        }
+      ],
+      "suites": [],
+      "passes": [],
+      "failures": [
+        "acfede5c-1d45-4697-85f0-f931201fa7b4"
+      ],
+      "pending": [],
+      "skipped": [],
+      "duration": 10415,
+      "root": true,
+      "rootEmpty": false,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/reports"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+    "watchForFilechanges": true,
+    "projectId": "5gycq8",
+    "experimentalStudio": true,
+    "reporter": "mochawesome",
+    "reporterOptions": {
+        "charts": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/reports"
+    }
+}

@@ -1,0 +1,144 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-11-29T22:30:09.872Z",
+    "end": "2022-11-29T22:30:14.813Z",
+    "duration": 4941,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "0467073c-0d91-458f-a112-6d53cd3a108d",
+      "title": "",
+      "fullFile": "cypress/integration/login.ts",
+      "file": "cypress/integration/login.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "4ca721bf-d52e-4d31-9b7c-f0db64803b06",
+          "title": "all Login test",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "pomtest",
+              "fullTitle": "all Login test pomtest",
+              "timedOut": null,
+              "duration": 1542,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "loginpage.Navigate('https://trytestingthis.netlify.app/');\nloginpage.EnterUserName('test');\nloginpage.EnterPassword('test');\nloginpage.ClickLoginButton();\ncy.get('h2');\ncy.contains('here').click();",
+              "err": {},
+              "uuid": "33089f3d-0628-4f4c-b662-ac3f97bd00a6",
+              "parentUUID": "4ca721bf-d52e-4d31-9b7c-f0db64803b06",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "invalidusername",
+              "fullTitle": "all Login test invalidusername",
+              "timedOut": null,
+              "duration": 1163,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "loginpage.EnterUserName('fbgrhjbgrhgb');\nloginpage.EnterPassword('test');\nloginpage.ClickLoginButton();\ncy.on('window:alert', (txt) => {\n    expect(txt).to.be.equal('Wrong Credentials! Try again!');\n});",
+              "err": {},
+              "uuid": "0d0a70b4-0585-4859-882a-423a6e96fc4e",
+              "parentUUID": "4ca721bf-d52e-4d31-9b7c-f0db64803b06",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "invalidPassword",
+              "fullTitle": "all Login test invalidPassword",
+              "timedOut": null,
+              "duration": 1083,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "loginpage.Navigate('https://trytestingthis.netlify.app/');\nloginpage.EnterUserName('test');\nloginpage.EnterPassword('hshbghjsdbg');\nloginpage.ClickLoginButton();\ncy.on('window:alert', (txt) => {\n    expect(txt).to.be.equal('Wrong Credentials! Try again!');\n});",
+              "err": {},
+              "uuid": "419b5bd6-3cb8-4e7b-acc5-503b44769ef7",
+              "parentUUID": "4ca721bf-d52e-4d31-9b7c-f0db64803b06",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "33089f3d-0628-4f4c-b662-ac3f97bd00a6",
+            "0d0a70b4-0585-4859-882a-423a6e96fc4e",
+            "419b5bd6-3cb8-4e7b-acc5-503b44769ef7"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 3788,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/reports"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

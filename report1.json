@@ -1,0 +1,477 @@
+{
+  "stats": {
+    "suites": 7,
+    "tests": 11,
+    "passes": 10,
+    "pending": 0,
+    "failures": 1,
+    "start": "2022-11-29T22:29:26.104Z",
+    "end": "2022-11-29T22:30:24.509Z",
+    "duration": 29186,
+    "testsRegistered": 11,
+    "passPercent": 90.9090909090909,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "7986f86b-5c64-4a1d-9a8c-71c1c377d427",
+      "title": "",
+      "fullFile": "cypress/integration/bflylogin.ts",
+      "file": "cypress/integration/bflylogin.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [
+        {
+          "title": "bflylogintest",
+          "fullTitle": "bflylogintest",
+          "timedOut": null,
+          "duration": 9976,
+          "state": "failed",
+          "speed": null,
+          "pass": false,
+          "fail": true,
+          "pending": false,
+          "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      {\n        \"title\": \"Failed screenshot\",\n        \"value\": \"/bflylogin.ts/bflylogintest (failed).png\"\n      }\n    ]\n  ]\n}",
+          "code": "cy.visit('https://cloud.staging.bfly.io/');\ncy.get('[data-bni-id=\"emailField\"]')\n    .type('pdhinesh@butterflynetinc.com');\n//cy.get('data-bni-id=\"emailField\"').type('pdhinesh@butterflynetinc.com{enter}')\ncy.get('[data-bni-id=\"passwordField\"]').type('Reset123{enter}');\ncy.get('[data-bni-id=\"loginButton\"]').click();",
+          "err": {
+            "message": "CypressError: Timed out retrying after 4050ms: `cy.click()` failed because this element is detached from the DOM.\n\n`<button data-bni-id=\"loginButton\" type=\"submit\" class=\"mt-4 w-full btn btn-solid btn-primary btn--lg\">...</button>`\n\nCypress requires elements be attached in the DOM to interact with them.\n\nThe previous command that ran was:\n\n  > `cy.get()`\n\nThis DOM element likely became detached somewhere between the previous and current command.\n\nCommon situations why this happens:\n  - Your JS framework re-rendered asynchronously\n  - Your app code reacted to an event firing and removed the element\n\nYou typically need to re-query for the element or add 'guards' which delay Cypress from running new commands.\n\nhttps://on.cypress.io/element-has-detached-from-dom",
+            "estack": "CypressError: Timed out retrying after 4050ms: `cy.click()` failed because this element is detached from the DOM.\n\n`<button data-bni-id=\"loginButton\" type=\"submit\" class=\"mt-4 w-full btn btn-solid btn-primary btn--lg\">...</button>`\n\nCypress requires elements be attached in the DOM to interact with them.\n\nThe previous command that ran was:\n\n  > `cy.get()`\n\nThis DOM element likely became detached somewhere between the previous and current command.\n\nCommon situations why this happens:\n  - Your JS framework re-rendered asynchronously\n  - Your app code reacted to an event firing and removed the element\n\nYou typically need to re-query for the element or add 'guards' which delay Cypress from running new commands.\n\nhttps://on.cypress.io/element-has-detached-from-dom\n    at $Cy.ensureAttached (https://cloud.staging.bfly.io/__cypress/runner/cypress_runner.js:163921:76)\n    at runAllChecks (https://cloud.staging.bfly.io/__cypress/runner/cypress_runner.js:150541:12)\n    at retryActionability (https://cloud.staging.bfly.io/__cypress/runner/cypress_runner.js:150621:16)\n    at tryCatcher (https://cloud.staging.bfly.io/__cypress/runner/cypress_runner.js:13022:23)\n    at Function.Promise.attempt.Promise.try (https://cloud.staging.bfly.io/__cypress/runner/cypress_runner.js:10296:29)\n    at whenStable (https://cloud.staging.bfly.io/__cypress/runner/cypress_runner.js:168785:63)\n    at https://cloud.staging.bfly.io/__cypress/runner/cypress_runner.js:168282:14\n    at tryCatcher (https://cloud.staging.bfly.io/__cypress/runner/cypress_runner.js:13022:23)\n    at Promise._settlePromiseFromHandler (https://cloud.staging.bfly.io/__cypress/runner/cypress_runner.js:10957:31)\n    at Promise._settlePromise (https://cloud.staging.bfly.io/__cypress/runner/cypress_runner.js:11014:18)\n    at Promise._settlePromise0 (https://cloud.staging.bfly.io/__cypress/runner/cypress_runner.js:11059:10)\n    at Promise._settlePromises (https://cloud.staging.bfly.io/__cypress/runner/cypress_runner.js:11139:18)\n    at Promise._fulfill (https://cloud.staging.bfly.io/__cypress/runner/cypress_runner.js:11083:18)\n    at https://cloud.staging.bfly.io/__cypress/runner/cypress_runner.js:12697:46\nFrom Your Spec Code:\n    at Context.eval (https://cloud.staging.bfly.io/__cypress/tests?p=cypress/integration/bflylogin.ts:113:43)",
+            "diff": null
+          },
+          "uuid": "b0ba64c3-05cd-4b97-b54a-d7d9f4bef11f",
+          "parentUUID": "7986f86b-5c64-4a1d-9a8c-71c1c377d427",
+          "isHook": false,
+          "skipped": false
+        }
+      ],
+      "suites": [],
+      "passes": [],
+      "failures": [
+        "b0ba64c3-05cd-4b97-b54a-d7d9f4bef11f"
+      ],
+      "pending": [],
+      "skipped": [],
+      "duration": 9976,
+      "root": true,
+      "rootEmpty": false,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "c79466b5-c623-4b79-9838-b3147ddf82f2",
+      "title": "",
+      "fullFile": "cypress/integration/filedownload.spec.ts",
+      "file": "cypress/integration/filedownload.spec.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "63508369-230a-4752-a39c-80e3c54e670a",
+          "title": "filedownload",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "filedownloadtest",
+              "fullTitle": "filedownload filedownloadtest",
+              "timedOut": null,
+              "duration": 355,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.downloadFile('https://upload.wikimedia.org/wikipedia/en/a/a9/Example.jpg', 'mydownloads', 'cypressdownload.jpg');",
+              "err": {},
+              "uuid": "e94ef101-4402-42b8-a2a6-ea76cc177a5f",
+              "parentUUID": "63508369-230a-4752-a39c-80e3c54e670a",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "e94ef101-4402-42b8-a2a6-ea76cc177a5f"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 355,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "02ead29c-7239-46ae-bbe7-13fec5ffef63",
+      "title": "",
+      "fullFile": "cypress/integration/fileupload.spec.ts",
+      "file": "cypress/integration/fileupload.spec.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "5d740ea7-6f4f-4206-9acc-42e68ee8071b",
+          "title": "fileupload",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "fileuploadtest",
+              "fullTitle": "fileupload fileuploadtest",
+              "timedOut": null,
+              "duration": 1237,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://filebin.net/');\ncy.get('[id=\"fileField\"]').attachFile('cypress.png');",
+              "err": {},
+              "uuid": "50a649cf-4021-482a-b86d-9df74ae7a635",
+              "parentUUID": "5d740ea7-6f4f-4206-9acc-42e68ee8071b",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "50a649cf-4021-482a-b86d-9df74ae7a635"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1237,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "06cb7efb-c31b-42b0-a51b-91b3818a3284",
+      "title": "",
+      "fullFile": "cypress/integration/firstest.ts",
+      "file": "cypress/integration/firstest.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [
+        {
+          "title": "first typetest",
+          "fullTitle": "first typetest",
+          "timedOut": null,
+          "duration": 12819,
+          "state": "passed",
+          "speed": "slow",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "cy.visit('https://google.com'),\n    cy.get('[name =\"q\"]')\n        .type('Automation Step by step')\n        .type('{enter}');",
+          "err": {},
+          "uuid": "2f184618-1354-4ff3-8633-b79413948f17",
+          "parentUUID": "06cb7efb-c31b-42b0-a51b-91b3818a3284",
+          "isHook": false,
+          "skipped": false
+        }
+      ],
+      "suites": [],
+      "passes": [
+        "2f184618-1354-4ff3-8633-b79413948f17"
+      ],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 12819,
+      "root": true,
+      "rootEmpty": false,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "0467073c-0d91-458f-a112-6d53cd3a108d",
+      "title": "",
+      "fullFile": "cypress/integration/login.ts",
+      "file": "cypress/integration/login.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "4ca721bf-d52e-4d31-9b7c-f0db64803b06",
+          "title": "all Login test",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "pomtest",
+              "fullTitle": "all Login test pomtest",
+              "timedOut": null,
+              "duration": 1542,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "loginpage.Navigate('https://trytestingthis.netlify.app/');\nloginpage.EnterUserName('test');\nloginpage.EnterPassword('test');\nloginpage.ClickLoginButton();\ncy.get('h2');\ncy.contains('here').click();",
+              "err": {},
+              "uuid": "33089f3d-0628-4f4c-b662-ac3f97bd00a6",
+              "parentUUID": "4ca721bf-d52e-4d31-9b7c-f0db64803b06",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "invalidusername",
+              "fullTitle": "all Login test invalidusername",
+              "timedOut": null,
+              "duration": 1163,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "loginpage.EnterUserName('fbgrhjbgrhgb');\nloginpage.EnterPassword('test');\nloginpage.ClickLoginButton();\ncy.on('window:alert', (txt) => {\n    expect(txt).to.be.equal('Wrong Credentials! Try again!');\n});",
+              "err": {},
+              "uuid": "0d0a70b4-0585-4859-882a-423a6e96fc4e",
+              "parentUUID": "4ca721bf-d52e-4d31-9b7c-f0db64803b06",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "invalidPassword",
+              "fullTitle": "all Login test invalidPassword",
+              "timedOut": null,
+              "duration": 1083,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "loginpage.Navigate('https://trytestingthis.netlify.app/');\nloginpage.EnterUserName('test');\nloginpage.EnterPassword('hshbghjsdbg');\nloginpage.ClickLoginButton();\ncy.on('window:alert', (txt) => {\n    expect(txt).to.be.equal('Wrong Credentials! Try again!');\n});",
+              "err": {},
+              "uuid": "419b5bd6-3cb8-4e7b-acc5-503b44769ef7",
+              "parentUUID": "4ca721bf-d52e-4d31-9b7c-f0db64803b06",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "33089f3d-0628-4f4c-b662-ac3f97bd00a6",
+            "0d0a70b4-0585-4859-882a-423a6e96fc4e",
+            "419b5bd6-3cb8-4e7b-acc5-503b44769ef7"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 3788,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "f7018fb4-2c95-4f3f-8e30-4fbdf6c23b60",
+      "title": "",
+      "fullFile": "cypress/integration/newtst.ts",
+      "file": "cypress/integration/newtst.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [
+        {
+          "title": "assertion",
+          "fullTitle": "assertion",
+          "timedOut": null,
+          "duration": 864,
+          "state": "passed",
+          "speed": "fast",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "cy.visit('https://example.cypress.io/');\ncy.contains('get').click();\ncy.get('#query-btn')\n    .should('contain', 'Button')\n    .should('have.class', 'query-btn btn btn-primary')\n    .should('be.enabled')\n    .should('be.visible');\ncy.get('#query-btn').invoke('attr', 'id')\n    .should('equal', 'query-btn');\ncy.get('#query-btn')\n    .should('contain', 'Button')\n    .and('have.class', 'query-btn btn btn-primary');\nexpect(true).to.be.true;\nassert.equal(4, 4, 'Not equal');\nassert.strictEqual(4, 4, 'Not equal');",
+          "err": {},
+          "uuid": "e1a9d1d6-49d6-475c-b2e5-7464fc8da75f",
+          "parentUUID": "f7018fb4-2c95-4f3f-8e30-4fbdf6c23b60",
+          "isHook": false,
+          "skipped": false
+        }
+      ],
+      "suites": [],
+      "passes": [
+        "e1a9d1d6-49d6-475c-b2e5-7464fc8da75f"
+      ],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 864,
+      "root": true,
+      "rootEmpty": false,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "c674fad9-a573-4536-809d-b7096762ea85",
+      "title": "",
+      "fullFile": "cypress/integration/readwritefile.spec.ts",
+      "file": "cypress/integration/readwritefile.spec.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "ee74640c-9bfc-4ef3-99ea-5e36284af429",
+          "title": "read write file test",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "read file using fixture",
+              "fullTitle": "read write file test read file using fixture",
+              "timedOut": null,
+              "duration": 51,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.fixture('example.json')\n    .its('name').should('eq', 'Using fixtures to represent data');\ncy.log(this.data.name);\ncy.log(this.data.email);",
+              "err": {},
+              "uuid": "aa17a8ad-e6dc-4c48-b207-d8235f248612",
+              "parentUUID": "ee74640c-9bfc-4ef3-99ea-5e36284af429",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "readfile",
+              "fullTitle": "read write file test readfile",
+              "timedOut": null,
+              "duration": 57,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.readFile('./cypress/fixtures/example.json')\n    .its('name').should('eq', 'Using fixtures to represent data');",
+              "err": {},
+              "uuid": "c6399aa1-4650-4ccb-b768-3e8ffb2e6e91",
+              "parentUUID": "ee74640c-9bfc-4ef3-99ea-5e36284af429",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "writefile",
+              "fullTitle": "read write file test writefile",
+              "timedOut": null,
+              "duration": 39,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.writeFile('sample.txt', 'Hello we are learning cypress');\ncy.writeFile('sample.txt', 'Hello we are learning cypress today');\ncy.writeFile('sample.txt', '\\nMy Name is preethi', { flag: 'a+' });\ncy.readFile('sample.txt').should('contain', 'cypress');",
+              "err": {},
+              "uuid": "46519bb0-699a-4577-aa76-e411f910beed",
+              "parentUUID": "ee74640c-9bfc-4ef3-99ea-5e36284af429",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "aa17a8ad-e6dc-4c48-b207-d8235f248612",
+            "c6399aa1-4650-4ccb-b768-3e8ffb2e6e91",
+            "46519bb0-699a-4577-aa76-e411f910beed"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 147,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/reports"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
